@@ -1,15 +1,33 @@
 package System;
 
+import java.util.Scanner;
+
 public class SimpleTest {
-    Recipe iceCream = new Recipe();
+    Recipe iceCream = new Recipe();  //recipe Obejects
     Recipe salmon = new Recipe();
     Recipe tuna = new Recipe();
 
     public static void main(String[] args) {
         SimpleTest st = new SimpleTest();
-        st.showIceCreamRecipe();
-        st.showSalmonRecipe();
-        st.showTunaSaladRecipe();
+
+        System.out.println("1. Tuna Salad \n" +
+                "2. Grilled Salmon \n" + "3. Strawberry IceCream\n");
+        System.out.print("Choose memu number : ");
+         Scanner input = new Scanner(System.in);
+         int menu = input.nextInt();
+
+        switch (menu) {  //Kontrolstrukturer  (switch)
+            case 1 :
+                st.showTunaSaladRecipe();
+                break;
+            case 2 :
+                st.showSalmonRecipe();
+                break;
+            case 3 :
+                st.showIceCreamRecipe();
+                break;
+
+        }
 
 
     }

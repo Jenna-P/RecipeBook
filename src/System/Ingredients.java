@@ -4,12 +4,12 @@ public class Ingredients extends Nutrients{  //TODO skal lave den nærings..
    private String name;
 
 
-   public Ingredients() {
+   public Ingredients() {  //constructors
 
    }
 
 
-    Ingredients(String name) {
+    Ingredients(String name) {    //constructors
         this.name = name;
        // this.calories = calories;
     }

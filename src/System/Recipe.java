@@ -11,7 +11,7 @@ public class Recipe {
     ArrayList<Ingredients> ingredients = new ArrayList<Ingredients>();
 
 
-   public Recipe () {
+   public Recipe () {    //constructors
 
     }
 
@@ -19,7 +19,7 @@ public class Recipe {
 
 
     public void addIngredients(String name) {
-        ingredients.add(new Ingredients(name));
+        ingredients.add(new Ingredients(name));  //ArrayList added
 
     }
     public void showIngredients() {
@@ -41,7 +41,7 @@ public class Recipe {
         System.out.println(" - " + "Recipe for " + menuName + " - ");
         System.out.println(instructions);
     }
-
+   //getter and Setter
     public String getMenuName() {
         return menuName;
     }

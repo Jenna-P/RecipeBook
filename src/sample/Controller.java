@@ -59,7 +59,7 @@ public class Controller implements Initializable {
         recipeTxt.setEditable(false);
 
         buttonAction = "Menu : Tuna Salad ";
-        try {
+        try {                   //Exceptions
             Data data = new Data();
             data.buttonAction = buttonAction;
             Persistance per = new Persistance();
