@@ -1,14 +1,20 @@
 package System;
 
-public class Ingredients extends Nutrients{
+public class Ingredients extends Nutrients{  //TODO skal lave den nærings..
    private String name;
-   private int calories;
+
+
+   public Ingredients() {
+
+   }
 
 
     Ingredients(String name) {
         this.name = name;
        // this.calories = calories;
     }
+
+
 
     public String getName() {
         return name;
@@ -18,13 +24,6 @@ public class Ingredients extends Nutrients{
         this.name = name;
     }
 
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
-    }
 
     public String toString() {
         return " - " + name;

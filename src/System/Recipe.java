@@ -11,23 +11,15 @@ public class Recipe {
     ArrayList<Ingredients> ingredients = new ArrayList<Ingredients>();
 
 
-    Recipe () {
+   public Recipe () {
 
     }
 
-    Recipe(String menuName, int prepTime, int cookTime, int serving, String instructions) {
-        this.menuName = menuName;
-        this.prepTime = prepTime;
-        this.cookTime = cookTime;
-        this.serving = serving;
-        this.instructions = instructions;
-    }
+
 
 
     public void addIngredients(String name) {
         ingredients.add(new Ingredients(name));
-       // for(Ingredients ingredient : ingredients)
-       // System.out.println(ingredient);
 
     }
     public void showIngredients() {
