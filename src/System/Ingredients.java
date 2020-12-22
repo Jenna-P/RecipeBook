@@ -1,6 +1,6 @@
 package System;
 
-public class Ingredients {
+public class Ingredients extends Nutrients{
    private String name;
    private int calories;
 

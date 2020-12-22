@@ -7,6 +7,7 @@ public class Recipe {
     private String instructions;
     private int serving;
     private int prepTime;
+    private int cookTime;
     ArrayList<Ingredients> ingredients = new ArrayList<Ingredients>();
 
 
@@ -14,9 +15,10 @@ public class Recipe {
 
     }
 
-    Recipe(String menuName, int prepTime, int serving, String instructions) {
+    Recipe(String menuName, int prepTime, int cookTime, int serving, String instructions) {
         this.menuName = menuName;
         this.prepTime = prepTime;
+        this.cookTime = cookTime;
         this.serving = serving;
         this.instructions = instructions;
     }
@@ -32,8 +34,16 @@ public class Recipe {
         System.out.println("Ingredients for " + menuName);
         System.out.println(ingredients.toString().replace(",","").
                 replace("[","").replace("]",""));
+        System.out.println("=================================================");
 
         }
+
+        public void showMenuInfo() {
+            System.out.println("PrepTime : " + prepTime + " mins" + "\n" + "CookTime : " +  cookTime + " mins"
+                    + "\n" +"Serving : " + serving);
+            System.out.println("=================================================");
+        }
+
 
     public void showRecipes() {
         System.out.println(" - " + "Recipe for " + menuName + " - ");
@@ -72,14 +82,11 @@ public class Recipe {
         this.prepTime = prepTime;
     }
 
-    public ArrayList<Ingredients> getIngredients() {
-        return ingredients;
+    public int getCookTime() {
+        return cookTime;
     }
 
-    public void setIngredients(ArrayList<Ingredients> ingredients) {
-        this.ingredients = ingredients;
+    public void setCookTime(int cookTime) {
+        this.cookTime = cookTime;
     }
-
-
-
 }
